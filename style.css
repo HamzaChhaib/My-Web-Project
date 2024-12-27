@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    scroll-behavior: smooth;
+    
+}
+nav {
+    
+    width: 60%;
+    height: 9vh;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    z-index: 999;
+}
+
+nav a li {
+    color: white;
+}
+
+nav span {
+    text-shadow: 0 0 10px white , /* text whadow to the logo */
+    0 0 40px white ,
+    0 0 50px white ,
+    0 0 120px white ;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+nav li {
+    border-bottom: 2px solid rgba(245, 222, 179, 0);
+    transition: all 0.3s;
+}
+
+nav li:hover {
+    border-bottom: 2px solid white;
+    text-shadow: 0 0 10px white , /* text whadow to the logo */
+    0 0 40px white ,
+    0 0 50px white ,
+    0 0 120px white ;
+}
+nav li:active{
+    color: rgb(134, 134, 134);
+    border-bottom: 2px solid rgb(134, 134, 134);
+}
+.hamburger {
+    display: none;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        left: 0;
+        border-radius: 20px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    nav a {
+        display: none;
+    }
+    nav span{
+        position: relative;
+        right: 38%;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a li {
+        display: block;
+        width: 100%;
+        height: 7vh;
+        text-align: center;
+    }
+}
+.home{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.home img{
+    position: relative;
+    top: 10%;
+    left: 9%;
+}
+.home .text1{
+    display: grid;
+    justify-content: end;
+    position: relative;
+    bottom: 50%;
+    right: 20%;
+}
+.text1 h5{
+    margin-bottom: 1%;
+    font-family: "Geologica", sans-serif;
+
+    font-weight: 400;
+    font-size: 20px;
+}
+.text1 h1{
+    font-size: 50px;
+    font-family: "Merienda", cursive;
+  font-weight: 700;
+  overflow: hidden;
+  border-right: 14px solid #000000;
+white-space: nowrap;
+animation: typing 3.5s steps(40, end) infinite;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+.text1 p{
+    margin-top: 2%;
+    font-family: "Geologica", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    overflow-x: hidden;
+} 
+.socialicon {
+    position: relative;
+    bottom: 48%;
+    left: 50%;
+    padding: 10px 20px;
+    width: 350PX;
+    display: flex;
+    justify-content: space-around;
+}
+.socialicon button{
+    width: 40PX;
+    height: 40px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    transition: all 0.8s ease;
+}
+/* AFTER HOVER ON TNE ICON */
+.socialicon button:hover{
+    transform: translateY(-10PX);
+
+}
+.social1:hover{
+    background-color: #000000;
+    color: white;
+}
+.social2:hover{
+    background-color: #cf0ea5;
+    color: white;
+}
+.social3:hover{
+    background-color: #000000;
+    color: white;
+}
+.social4:hover{
+    background-color: #0e56dd;
+    color: white;
+}
+.social5:hover{
+    background-color: #0026ff;
+    color: white;
+}
+.social6:hover{
+    background-color: #17c507;
+    color: white;
+}
+/* AFTER CLICK ON THE ICON */
+.social1:active{
+    background-color: #505050;
+    transition: 0.2s ease;
+}
+.social2:active{
+    background-color: #88036b;
+    transition: 0.2s ease;
+}
+.social3:active{
+    background-color: #505050;
+    transition: 0.2s ease;
+}
+.social4:active{
+    background-color: #0c41a3;
+    transition: 0.2s ease;
+}
+.social5:active{
+    background-color: #0822b6;
+    transition: 0.2s ease;
+}
+.social6:active{
+    background-color: #0e5f06;
+    transition: 0.2s ease;
+}
+/* to make the home responsive for mobile */
+@media (max-width: 1024px) {
+    .home img {
+        width: 360px;
+        height: 360px;
+        position: relative;
+        left: 50%;
+        top: 30px;
+        transform: translate(-50%);
+    }
+    .text1{
+        position: relative;
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .text1 h1{
+        position: relative;
+        left: 1%;
+        font-size: 42px;
+    }
+    .text1 p {
+        text-align: center;
+        width: 90%;
+        position: relative;
+        right: 0%;
+    }
+    .socialicon {
+        position: relative;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    marquee{
+        letter-spacing: 50px;
+    }
+    
+}
+marquee{
+    background-color: #252525;
+    position: relative;
+    bottom: 20px;
+    rotate: 1deg;
+}
+marquee ul{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 12px;
+    list-style: none;
+    font-size: 25px;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+
+}
+ .title{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(29, 29, 29);
+}
+.abt{
+    width: 350px;
+    height: 32vh;
+    position: relative;
+    top: 80px;
+    left: 10%;
+}
+.abt h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+.abt p{
+    font-family: "Geologica", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.what-i-learn{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+}
+/* to make the ABOUT responsive for mobile */
+@media (max-width: 768px) {
+    .about img {
+        width: 390px;
+        height: 390px;
+        position: relative;
+        right: 82%;
+    }
+    .abt{
+        position: relative;
+        top: 400px;
+    }
+    .abt h3{
+        position: relative;
+        left: -5%;
+    }
+    .abt p{
+        width: 360px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .what-i-learn{
+        position: relative;
+        top: 23%;
+        left: 20%;
+        transform: translate(-20%);
+    }
+}
+.projects{
+    width: 100%;
+    height: 100vh;
+}
+.allproject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mycard{
+    width: 340px;
+    height: 450px;
+    background-color: #fff9d0;
+    border: 1px SOLID black;
+    border-radius: 15px;
+}
+
+.mycard p {
+    text-align: center;
+    width: 90%;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.line111{
+    width: 35%;
+    height: 2px;
+    background-color: #000000;
+    position: relative;
+    top: 1%;
+    left: 10%;
+}
+.thelang{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2%;
+}
+.buttons{
+    width: 80%;
+    position: relative;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.buttons button{
+    width: 120px;
+    height: 30px;
+    gap: 13PX;
+    background-color: #0B2F9F;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    transition: 0.4s ease;
+    color: white;
+}
+.buttons button:hover{
+    background-color: #87A2FF;
+}
+.buttons button:active{
+   transform: scale(0.9);
+}
+@media (max-width: 780px) {
+    .allproject{
+        display: grid;
+        gap: 30PX;
+        height: 150vh;
+    }
+    .about{
+        height: 120vh;
+    }
+
+}
